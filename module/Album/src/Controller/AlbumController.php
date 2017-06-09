@@ -21,11 +21,11 @@ class AlbumController extends AbstractActionController
     public function indexAction()
     {
         echo "kishan";
-        return $this->table->fetchAll();
-        die('kishan kk');
-        // return new ViewModel([
-        //     'albums' => $this->table->fetchAll(),
-        // ]);
+        //print_r(expression)$this->table->fetchAll();
+        //die('kishan kk');
+        return new ViewModel([
+            'albums' => $this->table->fetchAll(),
+        ]);
 
     }
 
